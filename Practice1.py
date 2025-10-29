@@ -10,24 +10,8 @@ def calculate_grade(score):
     else:
         return "F"
     
-
-def generate_student_report(names,score):
+def generate_student_report(name,score):
     grade = calculate_grade(score)
-    return f"{names.upper()} has scored {score} and get grade {grade}"
+    print(f"{name} has scored {score} marks and get grade '{grade}'")
 
-print(generate_student_report("akya",90))
-print()
-
-students = ['sam','aditi','ram','tejya','abhi']
-marks = [99,89,56,35,70]
-
-result = []
-for i in range(len(students)):
-    msg = generate_student_report(students[i],marks[i])
-    result.append(msg)
-
-for i in result:
-    print(i)
-    print()
-
-
+generate_student_report("sam",99)
