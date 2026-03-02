@@ -32,4 +32,4 @@ while again =="y":
         age = l1.floatValue("Enter your age in years? ")
         print(l1.calculate(age))
     else:
-        print("\nGood Bye!!")
+        print("Good Bye!!")
